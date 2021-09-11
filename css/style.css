@@ -165,12 +165,13 @@ td {
 .titulo-principal {
   text-align: center;
   font-size: 2em;
-  margin: 1em 0 1em;
+  margin: 0 0 1em;
   clear: left;
+  text-shadow: 1px 1px 0 #c78c19;
 }
 
 .principal {
-  margin: 0 0 1em;
+  padding: 3em 0;
   background: #fefefe;
   width: 940px;
   margin: 0 auto;
@@ -195,12 +196,8 @@ td {
 }
 
 .mapa {
-  padding: 3m 0;
-}
-
-.mapa p {
-  margin: 0 0 3em;
-  text-align: center;
+  padding: 3em 0;
+  background: linear-gradient(#fefefe, #888888);
 }
 
 .ct-mapa {
@@ -208,8 +205,13 @@ td {
   margin: 0 auto;
 }
 
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
 .beneficios {
-  padding: 3m 0;
+  padding: 3em 0;
   background: #888888;
 }
 
@@ -232,11 +234,28 @@ td {
   font-weight: bold;
 }
 
+.itens:before {
+  content: "★";
+}
+
 .img-beneficios {
   width: 60%;
+  opacity: 1;
+  transition: 400ms;
+  box-shadow: 10px 10px 30px #000000;
+}
+
+.img-beneficios:hover {
+  opacity: 0.3;
 }
 
 .video {
   width: 560px;
   margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background: red;
+  }
 }
